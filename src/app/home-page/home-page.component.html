@@ -1,0 +1,133 @@
+<app-nav-bar></app-nav-bar>
+<section class="city-container">
+    <div class="cityDisplay">
+    <mat-card class="city-card">
+        <mat-card-header>
+            <div mat-card-avatar class="bengaluru-header-image"></div>
+            <mat-card-title>Namma Bengaluru</mat-card-title>
+            <mat-card-subtitle>Silicon Valley of India</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="src/beng.jpeg" alt="Photo of Bengaluru">
+        <mat-card-actions>
+            <button mat-button>Choose</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="city-card">
+        <mat-card-header>
+            <div mat-card-avatar class="delhi-header-image"></div>
+            <mat-card-title>Dildaar Delhi</mat-card-title>
+            <mat-card-subtitle>National Capital of India</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="src/delhi.jpeg" alt="Photo of Delhi">
+        <mat-card-actions>
+            <button mat-button>Choose</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="city-card">
+        <mat-card-header>
+            <div mat-card-avatar class="hyderabad-header-image"></div>
+            <mat-card-title>Hyderabad</mat-card-title>
+            <mat-card-subtitle>The City of Biryani</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="src/hyd.jpeg" alt="Photo of hyderabad">
+        <mat-card-actions>
+            <button mat-button>Choose</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="city-card">
+        <mat-card-header>
+            <div mat-card-avatar class="kolkata-header-image"></div>
+            <mat-card-title>Kolkata</mat-card-title>
+            <mat-card-subtitle>Cultural Capital of India</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="src/kolkata.jpeg" alt="Photo of Kolkata">
+        <mat-card-actions>
+            <button mat-button>Choose</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="city-card">
+        <mat-card-header>
+            <div mat-card-avatar class="pune-header-image"></div>
+            <mat-card-title>Aamchi Pune</mat-card-title>
+            <mat-card-subtitle>The Queen of Deccan</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="src/pune.jpeg" alt="Photo of Pune">
+        <mat-card-actions>
+            <button mat-button>Choose</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+</section>
+
+
+<div class="host">
+    <mat-form-field class="mat-search_field">
+        <input matInput type="text" size="1000" style="width:1000px"  placeholder="Search" (blur)="onBlurring(input.value)" (keyup.enter)="onEnterring(input.value)" (focus)="onFocussing(input.value)" />
+    </mat-form-field>
+    <span class="mat-search_icons" [class.mat-search_icons--active]="searchVisible">
+      <mat-icon class="mat-search_icon-close" (click)="close()" matRipple>close</mat-icon>
+      <mat-icon class="mat-search_icon-search" (click)="open()" matRipple>search</mat-icon>
+    </span>
+    </div>
+
+<section class="movie-container">
+<div class="trendingDisplay">
+    <mat-card class="trending-card">
+        <mat-card-header>
+            <mat-card-title>Movie 1</mat-card-title>
+            <mat-card-subtitle>Title 1</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="src/beng.jpeg" alt="Poster of Trending movie 1">
+        <mat-card-actions>
+            <button mat-button>See Details</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card class="trending-card">
+        <mat-card-header>
+            <mat-card-title>Movie 2</mat-card-title>
+            <mat-card-subtitle>Title 2</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="src/beng.jpeg" alt="Poster of Trending movie 2">
+        <mat-card-actions>
+            <button mat-button>See Details</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card class="trending-card">
+        <mat-card-header>
+            <mat-card-title>Movie 3</mat-card-title>
+            <mat-card-subtitle>Title 3</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="src/beng.jpeg" alt="Poster of Trending movie 3">
+        <mat-card-actions>
+            <button mat-button>See Details</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card class="trending-card">
+        <mat-card-header>
+            <mat-card-title>Movie 4</mat-card-title>
+            <mat-card-subtitle>Title 4</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="src/beng.jpeg" alt="Poster of Trending movie 4">
+        <mat-card-actions>
+            <button mat-button>See Details</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card class="trending-card">
+        <mat-card-header>
+            <mat-card-title>Movie 5</mat-card-title>
+            <mat-card-subtitle>Title 5</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="src/beng.jpeg" alt="Poster of Trending movie 5">
+        <mat-card-actions>
+            <button mat-button>See Details</button>
+        </mat-card-actions>
+    </mat-card>
+
+</div>    
+</section>
+
+
